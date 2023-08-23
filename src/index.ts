@@ -5,6 +5,9 @@ import { TaskResolver } from './resolvers/task';
 import { buildSchema } from 'type-graphql';
 import {ApolloServerPluginLandingPageGraphQLPlayground} from 'apollo-server-core'
 import { DataSource } from 'typeorm'
+import { Book } from './models/book'
+import { Author } from './models/author'
+import { BookResolver } from "./resolvers/book.resolver";
 
 const main = async () => {
 
@@ -15,6 +18,7 @@ const main = async () => {
         username: "root",
         password: "Alexbg03",
         database: "library",
+        entities: [ Book, Author ],
     })
 
     AppDataSource.initialize()
@@ -27,7 +31,7 @@ const main = async () => {
 
     const apolloServer = new ApolloServer({
         schema: await buildSchema({
-            resolvers: [TaskResolver],
+            resolvers: [TaskResolver, BookResolver ],
             validate: false
         }),
         plugins: [ApolloServerPluginLandingPageGraphQLPlayground()],
