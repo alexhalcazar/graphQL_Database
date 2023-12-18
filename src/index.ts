@@ -46,7 +46,7 @@ const main = async () => {
         res.send("hello world");
     });
 
-    const PORT = 8000;
+    const PORT = 4000;
     app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
     console.log('Test');
 }
