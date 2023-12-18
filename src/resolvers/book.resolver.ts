@@ -22,7 +22,7 @@ export class BookResolver {
         // If the author doesn't exist, create a new one
         if (!author) {
             author = Author.create({
-                name: "author",
+                name: data.name,
         });
 
         await author.save();

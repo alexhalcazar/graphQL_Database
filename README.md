@@ -88,9 +88,9 @@ You can use this GraphQL Playground to explore and interact with the API.
 - **Resolver Signature:** `addBook(data: NewBookEntry): Book`
 - **Arguments:**
     - `data` (Input): An object containing information about the new book.
-    - `title` (String): The title of the book.
-    - `authorId` (String). The ID of the author for the book.
-
+    - `title` (String!): The title of the book.
+    - `authorId` (Int!). The ID of the author for the book.
+    - `name` (String!): The name of the author for the book.
 ## Default Author IDs
 
 The GraphQL API includes default author IDs that you can use when adding books. If you don't provide a specific author ID when adding a book, the API will associate the book with one of these default authors. Here are the default author IDs:
