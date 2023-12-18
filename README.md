@@ -1,5 +1,7 @@
 # graphQL_Database
 
+Building a b GraphQL API using TypeORM for SQL database interactions, Type-GraphQL for resolver definitions, and Apollo Server integrated with Express for optimal performance.
+
 ## Installation
 
 1. Clone the Reposotiory:
