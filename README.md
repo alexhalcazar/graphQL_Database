@@ -91,6 +91,7 @@ You can use this GraphQL Playground to explore and interact with the API.
     - `title` (String!): The title of the book.
     - `authorId` (Int!). The ID of the author for the book.
     - `name` (String!): The name of the author for the book.
+
 ## Default Author IDs
 
 The GraphQL API includes default author IDs that you can use when adding books. If you don't provide a specific author ID when adding a book, the API will associate the book with one of these default authors. Here are the default author IDs:
@@ -102,8 +103,8 @@ The GraphQL API includes default author IDs that you can use when adding books. 
 
 When adding a book, you can use one of these IDs as the `authorId` in the mutation. For example:
 - **Usage Example:**
-  ```graphql
-  mutation {
+```graphql
+mutation {
     addBook(data: {
         title: "Harry Potter and the Chamber of Secrets",
         authorId: "1"
@@ -117,7 +118,7 @@ When adding a book, you can use one of these IDs as the `authorId` in the mutati
   }
 }
 ```
-
+  
 ## Reporting Issues
 
 If you encounter any issues or have suggestions for improvement, please [create an issue](https://github.com/alexhalcazar/graphQL_Database/issues).
