@@ -8,7 +8,7 @@ My GraphQL API provides a GraphQL endpoint for querying and mutating book data.
 
 ## Installation
 
-1. Clone the Reposotiory:
+1. Clone the Repository:
 
 ```bash
 git clone https://github.com/alexhalcazar/graphQL_Database.git
@@ -58,7 +58,7 @@ npm run dev
 
 ## Access the GraphQL Playground
 
-Open your web browser and navigate to  http://localhost:4000/graphql
+Open your web browser and navigate to [http://localhost:4000/graphql]
 You can use this GraphQL Playground to explore and interact with the API.
 
 ## Resolvers
@@ -94,7 +94,7 @@ You can use this GraphQL Playground to explore and interact with the API.
 
 ## Default Author IDs
 
-The GraphQL API includes default author IDs that you can use when adding books. If you don't provide a specific author ID when adding a book, the API will associate the book with one of these default authors. Here are the default author IDs:
+The GraphQL API includes default author IDs that you can use when adding books, providing a convenient way to associate books with authors. Here are the default author IDs:
 
 1. Default Author 1: `J.K. Rowling`
 2. Default Author 2: `J.R.R. Tolkien`
