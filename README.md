@@ -47,8 +47,7 @@ npm install
 
 ## Usage
 
-3. Configure your settings in 'tsconfig.json'
-4. Run the CLI:
+3. Run the CLI:
 
 Once the dependencies are installed, you can run the CLI using:
 
